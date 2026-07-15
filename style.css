@@ -1,1 +1,130 @@
-body{margin:0;font-family:Arial;background:#0b0b0b;color:#fff}header{background:#111;padding:15px}h2{color:#d4af37}.hero{text-align:center;padding:100px 20px}.btn{display:inline-block;padding:12px 20px;background:#d4af37;color:#111;text-decoration:none}.card{border:1px solid #d4af37;padding:20px;margin:10px}
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Arial, sans-serif;
+    background:#0b0b0b;
+    color:#fff;
+}
+
+header{
+    position:fixed;
+    top:0;
+    width:100%;
+    background:rgba(0,0,0,.9);
+    z-index:1000;
+}
+
+.navbar{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px 8%;
+}
+
+.logo-area{
+    display:flex;
+    gap:10px;
+    align-items:center;
+}
+
+.logo{
+    width:60px;
+    height:60px;
+    object-fit:contain;
+}
+
+.nav-links{
+    display:flex;
+    list-style:none;
+    gap:20px;
+}
+
+.nav-links a{
+    color:#fff;
+    text-decoration:none;
+}
+
+.hero{
+    height:100vh;
+    background:url("file_0000000096ec7243a8d2052be2a442c5.png") center center/cover no-repeat;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+}
+
+.overlay{
+    background:rgba(0,0,0,.65);
+    width:100%;
+    height:100%;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+}
+
+.hero h1{
+    font-size:60px;
+    color:#FFD700;
+}
+
+.hero p{
+    margin:20px 0;
+    font-size:24px;
+}
+
+.btn{
+    display:inline-block;
+    padding:15px 35px;
+    margin:10px;
+    background:#FFD700;
+    color:#000;
+    text-decoration:none;
+    border-radius:6px;
+    font-weight:bold;
+}
+
+.btn.secondary{
+    background:transparent;
+    border:2px solid #FFD700;
+    color:#FFD700;
+}
+
+section{
+    padding:100px 8%;
+}
+
+.container{
+    max-width:1200px;
+    margin:auto;
+}
+
+h2{
+    color:#FFD700;
+    margin-bottom:25px;
+}
+
+.category-grid,
+.mission-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:20px;
+}
+
+.card{
+    background:#1b1b1b;
+    padding:20px;
+    border:1px solid #FFD700;
+    border-radius:8px;
+}
+
+footer{
+    background:#000;
+    text-align:center;
+    padding:30px;
+    color:#aaa;
+}
